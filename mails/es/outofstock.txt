@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola {firstname} {lastname},
 
 Gracias por su pedido con la referencia {order_name} de{shop_name}.
@@ -13,6 +14,19 @@ Desafortunadamente, uno o más artículos están actualmente fuera de stock y es
 Follow your order and download your invoice on our store, go to the [Historial y detalles de mis pedidos]({history_url}) section of your customer account.
 
 Si tiene una cuenta de invitado, puede seguir su pedido desde la sección: [Seguimiento de pedido]({guest_tracking_url}) de nuestra tienda.
+=======
+Hi {firstname} {lastname},
+
+Thanks for your order with the reference {order_name} from {shop_name}.
+
+Order ID {order_name} - Replenishment required
+
+Unfortunately, one or more items are currently out of stock and this may cause a slight delay for delivery. Please accept our apologies for this inconvenience and be sure we are doing our best to correct the situation.
+
+Follow your order and download your invoice on our store, go to the [Order history and details]({history_url}) section of your customer account.
+
+If you have a guest account, you can follow your order via the [Guest Tracking]({guest_tracking_url}) section on our shop.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

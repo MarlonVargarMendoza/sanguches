@@ -3,6 +3,7 @@
 use Symfony\Component\Translation\MessageCatalogue;
 
 $catalogue = new MessageCatalogue('es-ES', array (
+<<<<<<< HEAD
   'AdminActions' => 
   array (
     'Uninstall' => 'Desinstalar',
@@ -9306,6 +9307,8 @@ De acuerdo con la Rec.30;Art.7(1)(c)',
   array (
     'Themes Catalog' => 'Catálogo de Temas',
   ),
+=======
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 ));
 
 $catalogueEs = new MessageCatalogue('es', array (

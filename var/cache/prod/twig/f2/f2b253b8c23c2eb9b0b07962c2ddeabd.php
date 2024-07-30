@@ -111,6 +111,10 @@ class __TwigTemplate_c289f89e80811df5fa6786b3cd47d3ef extends Template
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
         return new Source("", "@PrestaShop/Admin/Common/Grid/Blocks/bulk_actions.html.twig", "C:\\xampp\\htdocs\\sanguches\\src\\PrestaShopBundle\\Resources\\views\\Admin\\Common\\Grid\\Blocks\\bulk_actions.html.twig");
+=======
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Blocks/bulk_actions.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\src\\PrestaShopBundle\\Resources\\views\\Admin\\Common\\Grid\\Blocks\\bulk_actions.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }

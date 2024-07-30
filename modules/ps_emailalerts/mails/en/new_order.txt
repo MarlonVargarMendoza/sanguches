@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 [{shop_url}] 
 
@@ -57,3 +58,48 @@ TOTAL PAID
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 
 
+=======
+ 
+
+{shop_url}
+
+Congratulations!
+
+A new order was placed on {shop_name} by the following customer: {firstname} {lastname} ({email})
+
+Order details
+
+Order: {order_name} Placed on {date}
+
+Payment: {payment}
+
+Reference	Product	Unit price	Quantity	Total price   {items}
+Products	{total_products}
+Discounts	{total_discounts}
+Gift-wrapping	{total_wrapping}
+Shipping	{total_shipping}
+Including total tax	{total_tax_paid}
+Total paid	{total_paid}
+
+Carrier
+
+Carrier: {carrier}
+
+Payment: {payment}
+
+Delivery address
+
+{delivery_block_html}
+
+Billing address
+
+{invoice_block_html}
+
+Customer message:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop-project.org/)
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73

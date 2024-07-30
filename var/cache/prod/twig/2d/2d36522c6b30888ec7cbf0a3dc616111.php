@@ -1148,6 +1148,10 @@ class __TwigTemplate_b89c7e606db757d35eb235f948f2f291 extends Template
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
         return new Source("", "@PrestaShop/Admin/macros.html.twig", "C:\\xampp\\htdocs\\sanguches\\src\\PrestaShopBundle\\Resources\\views\\Admin\\macros.html.twig");
+=======
+        return new Source("", "@PrestaShop/Admin/macros.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\src\\PrestaShopBundle\\Resources\\views\\Admin\\macros.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }

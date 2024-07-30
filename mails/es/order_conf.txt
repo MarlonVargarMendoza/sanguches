@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola {firstname} {lastname},
 
 ¡Gracias por comprar en {shop_name}!
@@ -38,6 +39,44 @@ Dirección de facturación
 Follow your order and download your invoice on our store, go to the [Historial y detalles de mis pedidos]({history_url}) section of your customer account.
 
 Si tiene una cuenta de invitado, puede seguir su pedido desde la sección: [Seguimiento de pedido]({guest_tracking_url}) de nuestra tienda.
+=======
+Hi {firstname} {lastname},
+
+Thank you for shopping on {shop_name}!
+
+Order details
+
+Order: {order_name} Placed on {date}
+
+Payment: {payment}
+
+Reference	Product	Unit price	Quantity	Total price  {products_txt} {discounts_txt}
+Products	{total_products}
+Discounts	{total_discounts}
+Shipping	{total_shipping}
+Including total tax	{total_tax_paid}
+Total paid	{total_paid}
+
+Shipping
+
+Carrier: {carrier}
+
+Payment: {payment}
+
+Recycled packaging: {recycled_packaging_label}
+
+Delivery address
+
+{delivery_block_txt}
+
+Billing address
+
+{invoice_block_txt}
+
+Follow your order and download your invoice on our store, go to the [Order history and details]({history_url}) section of your customer account.
+
+If you have a guest account, you can follow your order via the [Guest Tracking]({guest_tracking_url}) section on our shop.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

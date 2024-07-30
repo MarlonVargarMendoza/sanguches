@@ -2,11 +2,19 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola {firstname} {lastname},
 
 {reply}
 
 Por favor, no conteste a este correo electrónico, no recibiremos su respuesta. Para responder, por favor utilice el siguiente enlace: {link}
+=======
+Hi {firstname} {lastname},
+
+{reply}
+
+Please do not reply directly to this email, we will not receive it. In order to reply, click on the following link: {link}
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

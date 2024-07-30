@@ -2,9 +2,15 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola,
 
 Gracias por suscribirse a nuestro boletín de noticias. Haga clic en el siguiente enlace para confirmar su solicitud:
+=======
+Hi,
+
+Thank you for subscribing to our newsletter. Please click on the following link to confirm your request:
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 {verif_url}
 
 [{shop_name}]({shop_url})

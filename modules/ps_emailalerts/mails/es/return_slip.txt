@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola,
 
 Has recibido una nueva solicitud de devolución en {shop_name}.
@@ -23,6 +24,29 @@ Dirección de facturación
 {invoice_block_html}
 
 Mensaje del cliente:
+=======
+Hi,
+
+You have received a new return request for {shop_name}.
+
+Return Details
+
+Order: {order_name} Placed on {date}
+
+Customer: {firstname} {lastname}, ({email})
+
+Reference	Product	Quantity   {items}
+
+Delivery address
+
+{delivery_block_html}
+
+Billing address
+
+{invoice_block_html}
+
+Customer message:
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 {message}
 

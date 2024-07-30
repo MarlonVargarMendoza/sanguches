@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola {firstname} {lastname},
 
 Su carrito de compra en {shop_name}
@@ -17,6 +18,23 @@ Su código del cupón de descuento en {shop_name}
 Aquí está su CÓDIGO DE CUPÓN DE DESCUENTO: {voucher_num}
 
 Introduzca este código en su carrito de compra para obtener el descuento.
+=======
+Hi {firstname} {lastname},
+
+Your cart at {shop_name}
+
+Thanks for your visit. However, it looks like you did not complete your purchase.
+
+Your cart has been saved, you can go back to your order on our shop: {shop_url}
+
+We are pleased to offer you a discount of {amount}% off your next order. And this offer is valid for {days} days, so do not wait any longer!
+
+Your voucher code on {shop_name}
+
+Here is your VOUCHER CODE: {voucher_num}
+
+Enter this code in your shopping cart to get the discount.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

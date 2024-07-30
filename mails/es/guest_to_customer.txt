@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola {firstname} {lastname},
 
 Su cuenta de invitado ha sido transformada en una cuenta de cliente
@@ -14,6 +15,20 @@ Haga clic en el siguiente enlace para configurar su contraseña:
 {url}
 
 Puede acceder a su cuenta de cliente en nuestra tienda: [{shop_name}]({shop_url})
+=======
+Hi {firstname} {lastname},
+
+Your guest account has been turned into a customer account
+
+Congratulations, your guest account for {shop_name} has been turned into a customer account!
+
+Email address: {email}
+
+Click on the following link to set up your password:
+{url}
+
+You can access your customer account on our store: [{shop_name}]({shop_url})
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

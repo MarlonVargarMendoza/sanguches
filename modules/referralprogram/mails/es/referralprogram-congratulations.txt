@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 ¡Enhorabuena!
 
 ¡Su amigo referido {sponsored_firstname} {sponsored_lastname} ha realizado su primera compra en [{shop_name}]({shop_url})!
@@ -9,6 +10,15 @@
 Nos complace ofrecerle un cupón de descuento valorado en {discount_display} (CUPÓN # {discount_name}) para que lo utilice en su próximo pedido.
 
 Saludos.
+=======
+Congratulations!
+
+Your referred friend {sponsored_firstname} {sponsored_lastname} has placed his/her first order on [{shop_name}]({shop_url})!
+
+We are pleased to offer you a voucher worth {discount_display} (VOUCHER # {discount_name}) that you can use on your next order.
+
+Best regards,
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

@@ -183,7 +183,11 @@ class Ps_mbo4114AdminContainer extends Container
      */
     protected function getMbo_Doctrine_Cache_AdapterService()
     {
+<<<<<<< HEAD
         return $this->services['mbo.doctrine.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('', 0, 'C:\\xampp\\htdocs\\sanguches/var/cache/prod\\%/ps_mbo');
+=======
+        return $this->services['mbo.doctrine.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('', 0, 'C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\%/ps_mbo');
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -193,7 +197,11 @@ class Ps_mbo4114AdminContainer extends Container
      */
     protected function getMbo_Doctrine_Cache_ProviderService()
     {
+<<<<<<< HEAD
         return $this->services['mbo.doctrine.cache.provider'] = new \Symfony\Component\Cache\DoctrineProvider(($this->services['mbo.doctrine.cache.adapter'] ?? ($this->services['mbo.doctrine.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('', 0, 'C:\\xampp\\htdocs\\sanguches/var/cache/prod\\%/ps_mbo'))));
+=======
+        return $this->services['mbo.doctrine.cache.provider'] = new \Symfony\Component\Cache\DoctrineProvider(($this->services['mbo.doctrine.cache.adapter'] ?? ($this->services['mbo.doctrine.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('', 0, 'C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\%/ps_mbo'))));
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -279,7 +287,11 @@ class Ps_mbo4114AdminContainer extends Container
     protected function getDefaultParameters(): array
     {
         return [
+<<<<<<< HEAD
             'ps_cache_dir' => 'C:\\xampp\\htdocs\\sanguches/var/cache/prod\\',
+=======
+            'ps_cache_dir' => 'C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\',
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
         ];
     }
 }

@@ -610,7 +610,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getCacheDirectoryProviderService()
     {
+<<<<<<< HEAD
         return $this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\sanguches', false);
+=======
+        return $this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio', false);
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -952,7 +956,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getLoggerDirectoryService()
     {
+<<<<<<< HEAD
         return $this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\sanguches');
+=======
+        return $this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio');
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -982,7 +990,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getLoggerHandlerFactoryService()
     {
+<<<<<<< HEAD
         return $this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerHandlerFactory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerHandlerFactory(($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] ?? ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\sanguches')))->getPath(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerFilename'] ?? $this->getLoggerFilenameService())->get(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerConfiguration'] ?? $this->getLoggerConfigurationService())->getMaxFiles(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerConfiguration'] ?? $this->getLoggerConfigurationService())->getLevel());
+=======
+        return $this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerHandlerFactory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerHandlerFactory(($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] ?? ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio')))->getPath(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerFilename'] ?? $this->getLoggerFilenameService())->get(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerConfiguration'] ?? $this->getLoggerConfigurationService())->getMaxFiles(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerConfiguration'] ?? $this->getLoggerConfigurationService())->getLevel());
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -3766,7 +3778,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getDoctrine_Dbal_DefaultConnectionService()
     {
+<<<<<<< HEAD
         return $this->services['doctrine.dbal.default_connection'] = (new \Doctrine\Bundle\DoctrineBundle\ConnectionFactory([]))->createConnection(['driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'sanguches', 'user' => 'root', 'password' => '', 'charset' => 'utf8mb4', 'driverOptions' => [1002 => 'SET sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))', 1013 => $this->getEnv('const:runtime:_PS_ALLOW_MULTI_STATEMENTS_QUERIES_')], 'defaultTableOptions' => []], new \Doctrine\DBAL\Configuration(), new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), ['enum' => 'string']);
+=======
+        return $this->services['doctrine.dbal.default_connection'] = (new \Doctrine\Bundle\DoctrineBundle\ConnectionFactory([]))->createConnection(['driver' => 'pdo_mysql', 'host' => '127.0.0.1', 'port' => '', 'dbname' => 'sanduches', 'user' => 'root', 'password' => '', 'charset' => 'utf8mb4', 'driverOptions' => [1002 => 'SET sql_mode=(SELECT REPLACE(@@sql_mode,\'ONLY_FULL_GROUP_BY\',\'\'))', 1013 => $this->getEnv('const:runtime:_PS_ALLOW_MULTI_STATEMENTS_QUERIES_')], 'defaultTableOptions' => []], new \Doctrine\DBAL\Configuration(), new \Symfony\Bridge\Doctrine\ContainerAwareEventManager($this), ['enum' => 'string']);
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -3782,6 +3798,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $c = new \Doctrine\Persistence\Mapping\Driver\MappingDriverChain();
 
         $d = ($this->services['annotation_reader'] ?? ($this->services['annotation_reader'] = new \Doctrine\Common\Annotations\AnnotationReader()));
+<<<<<<< HEAD
         $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($d, [0 => 'C:\\xampp\\htdocs\\sanguches\\modules\\productcomments\\src\\Entity']);
         $e->addExcludePaths([0 => 'C:\\xampp\\htdocs\\sanguches\\modules\\productcomments\\src\\Entity/index.php']);
         $f = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($d, [0 => 'C:\\xampp\\htdocs\\sanguches\\modules\\psxdesign\\src\\Entity']);
@@ -3792,6 +3809,18 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $h->addExcludePaths([0 => 'C:\\xampp\\htdocs\\sanguches\\modules\\ps_checkout\\src\\Entity/index.php']);
 
         $c->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($d, [0 => 'C:\\xampp\\htdocs\\sanguches\\src\\PrestaShopBundle\\Entity']), 'PrestaShop');
+=======
+        $e = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($d, [0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\productcomments\\src\\Entity']);
+        $e->addExcludePaths([0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\productcomments\\src\\Entity/index.php']);
+        $f = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($d, [0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\psxdesign\\src\\Entity']);
+        $f->addExcludePaths([0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\psxdesign\\src\\Entity/index.php']);
+        $g = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($d, [0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\ps_accounts\\src\\Entity']);
+        $g->addExcludePaths([0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\ps_accounts\\src\\Entity/index.php']);
+        $h = new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($d, [0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\ps_checkout\\src\\Entity']);
+        $h->addExcludePaths([0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\ps_checkout\\src\\Entity/index.php']);
+
+        $c->addDriver(new \Doctrine\ORM\Mapping\Driver\AnnotationDriver($d, [0 => 'C:\\xampp\\htdocs\\prestashop_intermedio\\src\\PrestaShopBundle\\Entity']), 'PrestaShop');
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
         $c->addDriver($e, 'PrestaShop\\Module\\ProductComment\\Entity');
         $c->addDriver($f, 'PrestaShop\\Module\\PsxDesign\\Entity');
         $c->addDriver($g, 'PrestaShop\\Module\\PsAccounts\\Entity');
@@ -3802,7 +3831,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         $a->setQueryCache($b);
         $a->setResultCache($b);
         $a->setMetadataDriverImpl($c);
+<<<<<<< HEAD
         $a->setProxyDir('C:\\xampp\\htdocs\\sanguches/var/cache/prod\\/doctrine/orm/Proxies');
+=======
+        $a->setProxyDir('C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\/doctrine/orm/Proxies');
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
         $a->setProxyNamespace('Proxies');
         $a->setAutoGenerateProxyClasses(false);
         $a->setClassMetadataFactoryName('Doctrine\\ORM\\Mapping\\ClassMetadataFactory');
@@ -4021,7 +4054,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Adapter_Module_Repository_ModuleRepositoryService()
     {
+<<<<<<< HEAD
         return $this->services['prestashop.adapter.module.repository.module_repository'] = new \PrestaShop\PrestaShop\Adapter\Module\Repository\ModuleRepository('C:\\xampp\\htdocs\\sanguches', 'C:\\xampp\\htdocs\\sanguches/modules/');
+=======
+        return $this->services['prestashop.adapter.module.repository.module_repository'] = new \PrestaShop\PrestaShop\Adapter\Module\Repository\ModuleRepository('C:\\xampp\\htdocs\\prestashop_intermedio', 'C:\\xampp\\htdocs\\prestashop_intermedio/modules/');
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -4189,7 +4226,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Core_Localization_Cldr_Cache_AdapterService()
     {
+<<<<<<< HEAD
         return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\xampp\\htdocs\\sanguches/var/cache/prod\\/localization');
+=======
+        return $this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\/localization');
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -4199,7 +4240,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Core_Localization_Cldr_Datalayer_LocaleCacheService()
     {
+<<<<<<< HEAD
         $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(($this->services['prestashop.core.localization.cldr.cache.adapter'] ?? ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\xampp\\htdocs\\sanguches/var/cache/prod\\/localization'))));
+=======
+        $this->services['prestashop.core.localization.cldr.datalayer.locale_cache'] = $instance = new \PrestaShop\PrestaShop\Core\Localization\CLDR\DataLayer\LocaleCache(($this->services['prestashop.core.localization.cldr.cache.adapter'] ?? ($this->services['prestashop.core.localization.cldr.cache.adapter'] = new \Symfony\Component\Cache\Adapter\FilesystemAdapter('CLDR', 0, 'C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\/localization'))));
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
         $instance->setLowerLayer(($this->services['prestashop.core.localization.cldr.datalayer.locale_reference'] ?? $this->getPrestashop_Core_Localization_Cldr_Datalayer_LocaleReferenceService()));
 
@@ -4355,7 +4400,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPrestashop_Translation_TranslatorLanguageLoaderService()
     {
+<<<<<<< HEAD
         return $this->services['prestashop.translation.translator_language_loader'] = new \PrestaShopBundle\Translation\TranslatorLanguageLoader(($this->services['prestashop.adapter.module.repository.module_repository'] ?? ($this->services['prestashop.adapter.module.repository.module_repository'] = new \PrestaShop\PrestaShop\Adapter\Module\Repository\ModuleRepository('C:\\xampp\\htdocs\\sanguches', 'C:\\xampp\\htdocs\\sanguches/modules/'))));
+=======
+        return $this->services['prestashop.translation.translator_language_loader'] = new \PrestaShopBundle\Translation\TranslatorLanguageLoader(($this->services['prestashop.adapter.module.repository.module_repository'] ?? ($this->services['prestashop.adapter.module.repository.module_repository'] = new \PrestaShop\PrestaShop\Adapter\Module\Repository\ModuleRepository('C:\\xampp\\htdocs\\prestashop_intermedio', 'C:\\xampp\\htdocs\\prestashop_intermedio/modules/'))));
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -4455,7 +4504,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_Cache_Paypal_CaptureService()
     {
+<<<<<<< HEAD
         return $this->services['ps_checkout.cache.paypal.capture'] = new \Symfony\Component\Cache\Simple\ChainCache([0 => new \Symfony\Component\Cache\Simple\ArrayCache(), 1 => new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-capture', 3600, ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] ?? ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\sanguches', false)))->getPath())]);
+=======
+        return $this->services['ps_checkout.cache.paypal.capture'] = new \Symfony\Component\Cache\Simple\ChainCache([0 => new \Symfony\Component\Cache\Simple\ArrayCache(), 1 => new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-capture', 3600, ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] ?? ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio', false)))->getPath())]);
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -4465,7 +4518,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_Cache_Paypal_OrderService()
     {
+<<<<<<< HEAD
         return $this->services['ps_checkout.cache.paypal.order'] = new \Symfony\Component\Cache\Simple\ChainCache([0 => new \Symfony\Component\Cache\Simple\ArrayCache(), 1 => new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-orders', 3600, ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] ?? ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\sanguches', false)))->getPath())]);
+=======
+        return $this->services['ps_checkout.cache.paypal.order'] = new \Symfony\Component\Cache\Simple\ChainCache([0 => new \Symfony\Component\Cache\Simple\ArrayCache(), 1 => new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-orders', 3600, ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] ?? ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio', false)))->getPath())]);
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -4505,7 +4562,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
      */
     protected function getPsCheckout_LoggerService()
     {
+<<<<<<< HEAD
         return $this->services['ps_checkout.logger'] = ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerFactory'] ?? $this->getLoggerFactoryService())->build(($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] ?? ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\sanguches'))));
+=======
+        return $this->services['ps_checkout.logger'] = ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerFactory'] ?? $this->getLoggerFactoryService())->build(($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] ?? ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio'))));
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -4975,7 +5036,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
         return [
             'database_host' => '127.0.0.1',
             'database_port' => '',
+<<<<<<< HEAD
             'database_name' => 'sanguches',
+=======
+            'database_name' => 'sanduches',
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
             'database_user' => 'root',
             'database_password' => '',
             'database_prefix' => 'ps_',
@@ -4984,6 +5049,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'mailer_host' => '127.0.0.1',
             'mailer_user' => NULL,
             'mailer_password' => NULL,
+<<<<<<< HEAD
             'secret' => 'DnguWafnX7Oe7WuXmiqTvuwiVwjr1a9JCzjBzwcXaEJzmiGo3ER6vJanvIOSQaT9',
             'ps_caching' => 'CacheMemcache',
             'ps_cache_enable' => false,
@@ -4995,17 +5061,39 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'new_cookie_key' => 'def000008c106f510bc2c7a361469dcc11baab65799090718c5635d2651f9d692b47156145c0c4fe25fd4c0acd491efa30c81f3828aa8df801783b390f1cf382b6def9df',
             'api_public_key' => '-----BEGIN PUBLIC KEY-----'."\n".'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnXIKnT/KQtLENzzEfsQA'."\n".'ENlI/gkpcvpI293Q7HP+pcox5KnTaUOLQbTwRcZO9vfiKvQAm+ON/zfeEfxO252P'."\n".'b0uk9YyL3gT6+7yVtHb5ua7qZL8hQ9Cxo1h7em4tRGQXNrQFZIOZPnvJ2ap4yzq+'."\n".'kX5WfVKj60TmYg6pwuImLXmZuAraU9+z8DUAHcNfy7helCRJgjLBE84hsJh0v8yq'."\n".'xFCU2Y2+bl937S5nTojLCoDxtrgq6A8tNCtFtehYGgb+CkvFc0lsAhuottF7aW7G'."\n".'lLp1vM8IixDw+xlkTCbXw318vnee3CkBp8fJtSm8xP12vB9efxDFs3noxpMVsvDd'."\n".'QQIDAQAB'."\n".'-----END PUBLIC KEY-----'."\n".'',
             'api_private_key' => '-----BEGIN PRIVATE KEY-----'."\n".'MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCdcgqdP8pC0sQ3'."\n".'PMR+xAAQ2Uj+CSly+kjb3dDsc/6lyjHkqdNpQ4tBtPBFxk729+Iq9ACb443/N94R'."\n".'/E7bnY9vS6T1jIveBPr7vJW0dvm5rupkvyFD0LGjWHt6bi1EZBc2tAVkg5k+e8nZ'."\n".'qnjLOr6RflZ9UqPrROZiDqnC4iYteZm4CtpT37PwNQAdw1/LuF6UJEmCMsETziGw'."\n".'mHS/zKrEUJTZjb5uX3ftLmdOiMsKgPG2uCroDy00K0W16FgaBv4KS8VzSWwCG6i2'."\n".'0XtpbsaUunW8zwiLEPD7GWRMJtfDfXy+d57cKQGnx8m1KbzE/Xa8H15/EMWzeejG'."\n".'kxWy8N1BAgMBAAECggEABiFKfYFL9Mg9AIORiPf7oqxNXuGNJzrMciAvJrtgAACg'."\n".'/RplCiw72QBKHuDGzd0+vEOJXa0BXvixqkJRXtRURdX6NbqxXEVfOkSioz3C6lbt'."\n".'UhIkauu8IkZ9cfnKVrBo80E5gfRHvF9GL5FLzNeTCpok3cj8ImzyroEeXM8uTKJ5'."\n".'+u8b6D49mUsXGe2gjOgtq6fWAay7B3D1aU82NGuHobQcRyUYE6z28Nx5Vda8IXc4'."\n".'GNgZlCyW27A4QeDFFbI+QPaS4Y2qaWIA8Dczk3BTilNiUKexJVkTjgmgXGl2CIUo'."\n".'FdDMpcQTwOnSaO/hSI2oKaGsNmAEnwI2iiRE3nxqQwKBgQDK93H/6owWeyUNNgXs'."\n".'8/Yh2rK0/ZDVgHXsld8hmKi4cBQyekSVHVFeE+q7MTVF46/6WQ0NWlMXH3A0XXZq'."\n".'B/UUTRz9Q1ceqPize5J2ykFalUuXtfz9331WEQSVwVu+f+HPhMPDqWWsXfnc5sKC'."\n".'eIXBmZB23ieFKaIn2W7ys/ilcwKBgQDGlamLgvIKeVt/torUDodoqbo49gO/bbVp'."\n".'g1E9oj2A4NITJSp/CnpJDHug0V02Qn45wT7G0IO0w5utiAMLCjungIt+OdpMeBMY'."\n".'cFAEDHrP86UfiV4MFctA8BUutZup4YTXcc/CFp6/W2AptwTy+szBp3c4vuhOeWCG'."\n".'GyHBpUFlewKBgQCCfoV1HL/k1FgGHm3A4zmkmo+7fivYmTc4XUOQvi38J1NVAPeH'."\n".'R8pAyl1o7UJrJPDH7OlPZHt3qmbhxBWWJneUDeBNlTY2KD1+aDzK008hhkuLxx5Z'."\n".'u49B/r8L6b2qxV3RpnKXIhqUr/ct58+3QvX8e1c+laajHxl6tXl34e5DsQKBgGjC'."\n".'mT+U47Ts0n0sQk6eH4bySuAzwERjTtmLwfbeuM1dTNV2vNVqJJqWsD1lVWQDbe1v'."\n".'6XsekuxwaJcB8oEHc/LoWC5NvMCsc35n+X45Syya3tglMmzzrlbikHokqirTYq35'."\n".'R12faz2Nqcw31a+M6Smb+8P+yjRjyazVcVhjon0zAoGAa66BWY2ZL9W96I/K0fy4'."\n".'8K0PootEDKQOWDSPbeJV5eBus4b0USOCSUNHGj3kru97Fv6oiZiZnoFTkGRP1/HP'."\n".'dwGt9LUhs9NJBgAIpIRTc4dmfrJbQUrmH6GT7hgeOav6TIJvOCm58h3kjPrH/N4J'."\n".'UOpaVlxI+ki+x8JGFf5/GP8='."\n".'-----END PRIVATE KEY-----'."\n".'',
+=======
+            'secret' => 'xxSu4vPyUZBhTznvBNbpcQaIXnji1KY3RY175i2peC3ThBpxXvnhrZiBspOtRK7O',
+            'ps_caching' => 'CacheMemcache',
+            'ps_cache_enable' => false,
+            'ps_creation_date' => '2024-07-29',
+            'locale' => 'en-US',
+            'use_debug_toolbar' => true,
+            'cookie_key' => 'c5SIjJCkRxh1eFYUsQGX3NBmo76vt6NQa69ZhRiE1VoYA1pJ7vh9DGqfi88oqGZU',
+            'cookie_iv' => 'zwGxPXIYQVXJKijUTBhCduL6pz8x7iXR',
+            'new_cookie_key' => 'def00000f753f080ade95fa682d059ceab51823afaf372ad579e791da76de5c38aca5cf1d95a1b74adca346982e40bc2940593dfb5aa69ad4b50cfcc780d0d23fd77ab69',
+            'api_public_key' => '-----BEGIN PUBLIC KEY-----'."\n".'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtKYCiP7TTFAWyJrpN54H'."\n".'/WcDSxImTUCBvE3ClxayEWe6ZgCkfzuP+7AiVtR+q8sQaflpXtFoQ4UnUoN87nh2'."\n".'nE6U8oHqNm/HJR7tSU6fAaP759ULvQ5UDJ+nks5EfZkjOgrg+WDfrnMME+FlBLOA'."\n".'+MxfE36ThcyptQfWPYuzEBprG3LxQrCB3OzwqysCa1S1GlzIojyJM+2hlR3WeArj'."\n".'Yz8parBITgMkWQyMjnwB4Xi3VA5Y2fM2F1ZlaBmc7r+beLZNKjv7NcCWglEjE3lD'."\n".'cYwcf1fjO7RmfI4efQxdw+DFz3gIMKyW2YsOHHRoBXRf9jMSOK/BaSYM76dZsqW3'."\n".'xwIDAQAB'."\n".'-----END PUBLIC KEY-----'."\n".'',
+            'api_private_key' => '-----BEGIN PRIVATE KEY-----'."\n".'MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC0pgKI/tNMUBbI'."\n".'muk3ngf9ZwNLEiZNQIG8TcKXFrIRZ7pmAKR/O4/7sCJW1H6ryxBp+Wle0WhDhSdS'."\n".'g3zueHacTpTygeo2b8clHu1JTp8Bo/vn1Qu9DlQMn6eSzkR9mSM6CuD5YN+ucwwT'."\n".'4WUEs4D4zF8TfpOFzKm1B9Y9i7MQGmsbcvFCsIHc7PCrKwJrVLUaXMiiPIkz7aGV'."\n".'HdZ4CuNjPylqsEhOAyRZDIyOfAHheLdUDljZ8zYXVmVoGZzuv5t4tk0qO/s1wJaC'."\n".'USMTeUNxjBx/V+M7tGZ8jh59DF3D4MXPeAgwrJbZiw4cdGgFdF/2MxI4r8FpJgzv'."\n".'p1mypbfHAgMBAAECggEAOPMG5JJVIX80F4zCjg6LXUb+4kk3+u2lmKv49vGoNFV7'."\n".'jVGRiizIUOOvh6kYv+bV51rB7ardkD+nbFtYZMNkPRWG3ka3g+7MHLc5vf0DopxE'."\n".'O0tOFo0wUQR56w2MyP2gfdlVIDj6ez/4pEHPu2ItfAHNzVL/hdRGAfSVBTUHv8DU'."\n".'kdyqSdgUMBDkLfnVEmCm9EgFqfQgEvm2JvaHlxQf2hfvZRCQvNz95NlYRSlsyrZ/'."\n".'IgU1c0xx0NX1J66ekzIeRE0n9+HKqepLvAB49SfinIrxn5lenDW9EKQHuJChqW/u'."\n".'yokNmhpSsDZGwLp8qpirZvwDOVc5haN8jlirPb43zQKBgQDik6TCwhsufdengDIa'."\n".'+vyTM1xQZHpV5nLYILAauHTCULP/1A/Ha+eCHyKHZ2pqSy8MK0D+/Svg3FWW1xrL'."\n".'kmE32xnvpd5qqGexWCE5rQa5iKLUU+a3Dx7YbcLOOiHo0GemMdrXbm/OXj3IqXwZ'."\n".'MXQp2Muh1RWIu4qpZIzfjc5UAwKBgQDMG4TzP9fSCmwMnzQ329NPt9e/fqueKnKD'."\n".'tgeKJyPM2XloFmnpfLk/YwewO3L7/oDPPb0FM8T+8AEl06q2TTZeCNw69Wp2gQ5b'."\n".'Q5LFrQoq8QOfaBOWp0kxeBVzCPQbQNV5tzpMPuu04QSvuyffDLvukx+0xP0O6qsw'."\n".'3fn5mMH77QKBgEy4L47eyPNqGw6VguHN4J47QuPZ0e6qNHLoRpkVojt1ti1G8fzV'."\n".'lbNitX9hzg+l241kTALLWQMvuC92MJWDwDV4lASohnJZCZtsOvvbka5bDL+WlUWg'."\n".'8hHYwKCx4G+DucT1lqNhuqwHDyaV9PZW332X8gOfMkZ1MlN/P5Am5RlfAoGAUH3F'."\n".'x3v066Mqiyu5lxG82qJAlgcpPN22fVSq0oOu7ZkR9MdqCychkurF3G0FYnUybQgG'."\n".'4+dPl84kVbuMhgobF6hc2W9xBbzNYZZbalNcQCT97b5Ig1ADYFvf8ZalVZ4S0cY9'."\n".'WlYx9AoNJBQlnCPUdThV9577wQcwbbwMWa8xSN0CgYABFF9WSMzue192PZxI7OpD'."\n".'s6VHvEvKKC/fP5Unp6/AuSwx0+ykA0qWDsSCIDRsWusf+03GaqiOaIEk0u7uOVhI'."\n".'d1GRz74H65U5W12sD1Wv/CnCruL04h2Sze4c40GDE9cviB4yUI1C19ezvKqMD/aj'."\n".'61oVAH6XqL3/bNCx++g85A=='."\n".'-----END PRIVATE KEY-----'."\n".'',
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
             'cache.driver' => 'array',
             'cache.adapter' => 'cache.adapter.array',
             'kernel.bundles' => [
 
             ],
+<<<<<<< HEAD
             'kernel.root_dir' => 'C:\\xampp\\htdocs\\sanguches/app',
             'kernel.project_dir' => 'C:\\xampp\\htdocs\\sanguches',
             'kernel.name' => 'app',
             'kernel.debug' => false,
             'kernel.environment' => 'prod',
             'kernel.cache_dir' => 'C:\\xampp\\htdocs\\sanguches/var/cache/prod\\',
+=======
+            'kernel.root_dir' => 'C:\\xampp\\htdocs\\prestashop_intermedio/app',
+            'kernel.project_dir' => 'C:\\xampp\\htdocs\\prestashop_intermedio',
+            'kernel.name' => 'app',
+            'kernel.debug' => false,
+            'kernel.environment' => 'prod',
+            'kernel.cache_dir' => 'C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\',
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
             'kernel.active_modules' => [
                 0 => 'ps_linklist',
                 1 => 'blockreassurance',
@@ -5020,6 +5108,7 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 10 => 'ps_searchbar',
                 11 => 'ps_imageslider',
                 12 => 'ps_featuredproducts',
+<<<<<<< HEAD
                 13 => 'ps_specials',
                 14 => 'ps_newproducts',
                 15 => 'ps_bestsellers',
@@ -5088,6 +5177,75 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
                 78 => 'ht_googleanalytics',
             ],
             'ps_cache_dir' => 'C:\\xampp\\htdocs\\sanguches/var/cache/prod\\',
+=======
+                13 => 'ps_banner',
+                14 => 'ps_customtext',
+                15 => 'ps_specials',
+                16 => 'ps_newproducts',
+                17 => 'ps_bestsellers',
+                18 => 'ps_emailsubscription',
+                19 => 'ps_socialfollow',
+                20 => 'ps_customeraccountlinks',
+                21 => 'productcomments',
+                22 => 'ps_categorytree',
+                23 => 'contactform',
+                24 => 'ps_sharebuttons',
+                25 => 'dashactivity',
+                26 => 'dashgoals',
+                27 => 'dashproducts',
+                28 => 'dashtrends',
+                29 => 'gamification',
+                30 => 'graphnvd3',
+                31 => 'gridhtml',
+                32 => 'gsitemap',
+                33 => 'klaviyopsautomation',
+                34 => 'mbeshipping',
+                35 => 'pagesnotfound',
+                36 => 'psxdesign',
+                37 => 'psxmarketingwithgoogle',
+                38 => 'ps_accounts',
+                39 => 'ps_brandlist',
+                40 => 'ps_cashondelivery',
+                41 => 'ps_categoryproducts',
+                42 => 'ps_checkout',
+                43 => 'ps_checkpayment',
+                44 => 'ps_crossselling',
+                45 => 'ps_dataprivacy',
+                46 => 'ps_distributionapiclient',
+                47 => 'ps_edition_basic',
+                48 => 'ps_emailalerts',
+                49 => 'ps_eventbus',
+                50 => 'ps_facebook',
+                51 => 'ps_faviconnotificationbo',
+                52 => 'ps_googleanalytics',
+                53 => 'ps_mbo',
+                54 => 'ps_metrics',
+                55 => 'ps_supplierlist',
+                56 => 'ps_themecusto',
+                57 => 'ps_viewedproduct',
+                58 => 'ps_wirepayment',
+                59 => 'statsbestcategories',
+                60 => 'statsbestcustomers',
+                61 => 'statsbestmanufacturers',
+                62 => 'statsbestproducts',
+                63 => 'statsbestsuppliers',
+                64 => 'statsbestvouchers',
+                65 => 'statscarrier',
+                66 => 'statscatalog',
+                67 => 'statscheckup',
+                68 => 'statsdata',
+                69 => 'statsforecast',
+                70 => 'statsnewsletter',
+                71 => 'statspersonalinfos',
+                72 => 'statsproduct',
+                73 => 'statsregistrations',
+                74 => 'statssales',
+                75 => 'statssearch',
+                76 => 'statsstock',
+                77 => 'ps_facetedsearch',
+            ],
+            'ps_cache_dir' => 'C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\',
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
             'mail_themes_uri' => '/mails/themes',
             'doctrine.dbal.logger.chain.class' => 'Doctrine\\DBAL\\Logging\\LoggerChain',
             'doctrine.dbal.logger.profiling.class' => 'Doctrine\\DBAL\\Logging\\DebugStack',
@@ -5157,7 +5315,11 @@ class FrontContainer extends \PrestaShop\PrestaShop\Adapter\Container\LegacyCont
             'doctrine.orm.second_level_cache.cache_configuration.class' => 'Doctrine\\ORM\\Cache\\CacheConfiguration',
             'doctrine.orm.second_level_cache.regions_configuration.class' => 'Doctrine\\ORM\\Cache\\RegionsConfiguration',
             'doctrine.orm.auto_generate_proxy_classes' => false,
+<<<<<<< HEAD
             'doctrine.orm.proxy_dir' => 'C:\\xampp\\htdocs\\sanguches/var/cache/prod\\/doctrine/orm/Proxies',
+=======
+            'doctrine.orm.proxy_dir' => 'C:\\xampp\\htdocs\\prestashop_intermedio/var/cache/prod\\/doctrine/orm/Proxies',
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
             'doctrine.orm.proxy_namespace' => 'Proxies',
             'ps_accounts.environment' => 'production',
             'ps_accounts.accounts_api_url' => 'https://accounts-api.distribution.prestashop.net/',

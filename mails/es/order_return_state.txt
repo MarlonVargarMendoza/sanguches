@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola {firstname} {lastname},
 
 Devolución #{id_order_return} - Actualizada
@@ -9,6 +10,15 @@ Devolución #{id_order_return} - Actualizada
 El estado de su devolución #{id_order_return} ha cambiado a: "{state_order_return}".
 
 Follow your order and download your invoice on our store, go to the [Historial y detalles de mis pedidos]({history_url}) section of your customer account.
+=======
+Hi {firstname} {lastname},
+
+Order return #{id_order_return} - Update
+
+We have updated the progress on your return #{id_order_return}, the new status is: "{state_order_return}".
+
+Follow your order and download your invoice on our store, go to the [Order history and details]({history_url}) section of your customer account.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

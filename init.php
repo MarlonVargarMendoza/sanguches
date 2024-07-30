@@ -28,6 +28,14 @@ if (isset(Context::getContext()->controller)) {
     $controller = Context::getContext()->controller;
 } else {
     $controller = new FrontController();
+<<<<<<< HEAD
     $controller->init();// Initialize the controller
     //buenas
 }
+=======
+    $controller->init();
+}
+
+
+//TERCER COMMIT PRINCIPAL
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73

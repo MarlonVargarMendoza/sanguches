@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola {firstname} {lastname},
 
 Gracias por crear una cuenta de cliente en {shop_name}.
@@ -23,6 +24,29 @@ Consejos Importantes de Seguridad:
 4. Si sospecha que alguien está utilizando ilegalmente su cuenta, avísenos inmediatamente.
 
 Ahora puedes hacer pedidos en nuestra tienda: [{shop_name}]({shop_url})
+=======
+Hi {firstname} {lastname},
+
+Thank you for creating a customer account at {shop_name}.
+
+Your login details on {shop_name}
+
+Here are your login details:
+
+Email address: {email}
+
+Important Security Tips:
+
+1. Always keep your account details safe.
+
+2. Never disclose your login details to anyone.
+
+3. Change your password regularly.
+
+4. Should you suspect someone is using your account illegally, please notify us immediately.
+
+You can now place orders on our store: [{shop_name}]({shop_url})
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

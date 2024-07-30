@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola,
 
 Nuevo mensaje de aviso guardado
@@ -9,6 +10,15 @@ Nuevo mensaje de aviso guardado
 Warning: has recibido un nuevo aviso en el Back Office de tu tienda.
 
 Puede verificarlo en la sección Parámetros avanzados > Registros de su back office.
+=======
+Hi,
+
+New alert message saved
+
+WARNING: you have received a new log alert in your back office.
+
+You can check for it in the Advanced Parameters > Logs section of your back office.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

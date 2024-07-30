@@ -2,6 +2,7 @@
 
 {shop_url}
 
+<<<<<<< HEAD
 Hola,
 
 Mensaje de un cliente
@@ -11,6 +12,17 @@ Ha recibido un mensaje respecto al pedido con la referencia: {order_name}.
 Cliente: {firstname} {lastname} ({email})
 
 Mensaje del cliente:
+=======
+Hi,
+
+Message from customer
+
+You have received a new message regarding order with the reference {order_name}.
+
+Customer: {firstname} {lastname} ({email})
+
+Customer message:
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 {message}
 

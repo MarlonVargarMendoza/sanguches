@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 4.3.1, created on 2024-07-29 20:14:10
+=======
+/* Smarty version 4.3.1, created on 2024-07-29 18:42:33
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
   from 'module:productcommentsviewstemplateshookproductcommentslist.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
+<<<<<<< HEAD
   'unifunc' => 'content_66a83e62abbb10_35887751',
+=======
+  'unifunc' => 'content_66a828e94117a8_60547283',
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5994852a9960d76ab827d262a62165c31e86d3b8' => 
     array (
       0 => 'module:productcommentsviewstemplateshookproductcommentslist.tpl',
+<<<<<<< HEAD
       1 => 1722299258,
+=======
+      1 => 1693383296,
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
       2 => 'module',
     ),
   ),
@@ -25,6 +37,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'module:productcomments/views/templates/hook/confirm-modal.tpl' => 1,
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_66a83e62abbb10_35887751 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <?php echo '<script'; ?>
  type="text/javascript">
@@ -45,6 +58,28 @@ function content_66a83e62abbb10_35887751 (Smarty_Internal_Template $_smarty_tpl)
     <?php $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/average-grade-stars.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('grade'=>$_smarty_tpl->tpl_vars['average_grade']->value), 0, false);
 ?>
   </div>
+=======
+function content_66a828e94117a8_60547283 (Smarty_Internal_Template $_smarty_tpl) {
+echo '<script'; ?>
+ type="text/javascript">
+  var productCommentUpdatePostErrorMessage = '<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sorry, your review appreciation cannot be sent.','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) ),'javascript' ));?>
+';
+  var productCommentAbuseReportErrorMessage = '<?php echo call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Sorry, your abuse report cannot be sent.','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) ),'javascript' ));?>
+';
+<?php echo '</script'; ?>
+>
+
+<div id="product-comments-list-header">
+  <div class="comments-nb">
+    <i class="material-icons chat" data-icon="chat"></i>
+    <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Comments','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );?>
+ (<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['nb_comments']->value, ENT_QUOTES, 'UTF-8');?>
+)
+  </div>
+  <?php $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/average-grade-stars.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('grade'=>$_smarty_tpl->tpl_vars['average_grade']->value), 0, false);
+?>
+</div>
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 <?php ob_start();
 $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/product-comment-item-prototype.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
@@ -52,6 +87,7 @@ $_smarty_tpl->assign('comment_prototype', ob_get_clean());
 $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/empty-product-comment.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
+<<<<<<< HEAD
 <div class="col-md-12 col-sm-12"
      id="product-comments-list"
      data-list-comments-url="<?php echo $_smarty_tpl->tpl_vars['list_comments_url']->value;?>
@@ -69,14 +105,60 @@ $_smarty_tpl->_subTemplateRender('module:productcomments/views/templates/hook/em
   <?php if ($_smarty_tpl->tpl_vars['post_allowed']->value && $_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
     <button class="btn btn-comment btn-comment-big post-product-comment">
       <i class="material-icons shopping-cart">edit</i>
+=======
+<div id="product-comments-list"
+  data-list-comments-url="<?php echo $_smarty_tpl->tpl_vars['list_comments_url']->value;?>
+"
+  data-update-comment-usefulness-url="<?php echo $_smarty_tpl->tpl_vars['update_comment_usefulness_url']->value;?>
+"
+  data-report-comment-url="<?php echo $_smarty_tpl->tpl_vars['report_comment_url']->value;?>
+"
+  data-comment-item-prototype="<?php echo htmlspecialchars((string) call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['comment_prototype']->value,'html' )), ENT_QUOTES, 'UTF-8');?>
+"
+  data-current-page="1"
+  data-total-pages="<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['list_total_pages']->value, ENT_QUOTES, 'UTF-8');?>
+">
+</div>
+
+<div id="product-comments-list-footer">
+  <div id="product-comments-list-pagination">
+    <?php if ($_smarty_tpl->tpl_vars['list_total_pages']->value > 0) {?>
+      <ul>
+        <?php $_smarty_tpl->_assignInScope('prevCount', 0);?>
+        <li id="pcl_page_<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['prevCount']->value, ENT_QUOTES, 'UTF-8');?>
+"><span class="prev"><i class="material-icons">chevron_left</i></span></li>
+        <?php
+$_smarty_tpl->tpl_vars['pageCount'] = new Smarty_Variable(null, $_smarty_tpl->isRenderingCache);$_smarty_tpl->tpl_vars['pageCount']->step = 1;$_smarty_tpl->tpl_vars['pageCount']->total = (int) ceil(($_smarty_tpl->tpl_vars['pageCount']->step > 0 ? $_smarty_tpl->tpl_vars['list_total_pages']->value+1 - (1) : 1-($_smarty_tpl->tpl_vars['list_total_pages']->value)+1)/abs($_smarty_tpl->tpl_vars['pageCount']->step));
+if ($_smarty_tpl->tpl_vars['pageCount']->total > 0) {
+for ($_smarty_tpl->tpl_vars['pageCount']->value = 1, $_smarty_tpl->tpl_vars['pageCount']->iteration = 1;$_smarty_tpl->tpl_vars['pageCount']->iteration <= $_smarty_tpl->tpl_vars['pageCount']->total;$_smarty_tpl->tpl_vars['pageCount']->value += $_smarty_tpl->tpl_vars['pageCount']->step, $_smarty_tpl->tpl_vars['pageCount']->iteration++) {
+$_smarty_tpl->tpl_vars['pageCount']->first = $_smarty_tpl->tpl_vars['pageCount']->iteration === 1;$_smarty_tpl->tpl_vars['pageCount']->last = $_smarty_tpl->tpl_vars['pageCount']->iteration === $_smarty_tpl->tpl_vars['pageCount']->total;?>
+          <li id="pcl_page_<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['pageCount']->value, ENT_QUOTES, 'UTF-8');?>
+"><span><?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['pageCount']->value, ENT_QUOTES, 'UTF-8');?>
+</span></li>
+        <?php }
+}
+?>
+        <?php $_smarty_tpl->_assignInScope('nextCount', $_smarty_tpl->tpl_vars['list_total_pages']->value+1);?>
+        <li id="pcl_page_<?php echo htmlspecialchars((string) $_smarty_tpl->tpl_vars['nextCount']->value, ENT_QUOTES, 'UTF-8');?>
+"><span class="next"><i class="material-icons">chevron_right</i></span></li>
+      </ul>
+    <?php }?>
+  </div>
+  <?php if ($_smarty_tpl->tpl_vars['post_allowed']->value && $_smarty_tpl->tpl_vars['nb_comments']->value != 0) {?>
+    <button class="btn btn-comment btn-comment-big post-product-comment">
+      <i class="material-icons edit" data-icon="edit"></i>
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
       <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Write your review','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );?>
 
     </button>
   <?php }?>
 </div>
 
+<<<<<<< HEAD
 </div>
 
+=======
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 <?php ob_start();
 echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Your review appreciation cannot be sent','d'=>'Modules.Productcomments.Shop'),$_smarty_tpl ) );
 $_prefixVariable1 = ob_get_clean();

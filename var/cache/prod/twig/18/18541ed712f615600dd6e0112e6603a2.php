@@ -345,6 +345,10 @@ class __TwigTemplate_559c7c2c2591917998687839c4c95d8c extends Template
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
         return new Source("", "bootstrap_4_horizontal_layout.html.twig", "C:\\xampp\\htdocs\\sanguches\\vendor\\symfony\\symfony\\src\\Symfony\\Bridge\\Twig\\Resources\\views\\Form\\bootstrap_4_horizontal_layout.html.twig");
+=======
+        return new Source("", "bootstrap_4_horizontal_layout.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\vendor\\symfony\\symfony\\src\\Symfony\\Bridge\\Twig\\Resources\\views\\Form\\bootstrap_4_horizontal_layout.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }

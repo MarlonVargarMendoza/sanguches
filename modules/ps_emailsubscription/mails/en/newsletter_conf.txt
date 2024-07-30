@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 [{shop_url}] 
 
@@ -8,3 +9,16 @@ THANK YOU FOR SUBSCRIBING TO OUR NEWSLETTER.
 {shop_name} [{shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 
 
+=======
+ 
+
+{shop_url}
+
+Hi,
+
+Thank you for subscribing to our newsletter.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop-project.org/)
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
