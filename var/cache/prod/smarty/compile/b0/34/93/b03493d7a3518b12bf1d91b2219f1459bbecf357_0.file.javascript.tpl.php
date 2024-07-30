@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-07-29 19:28:52
+/* Smarty version 4.3.1, created on 2024-07-29 19:59:23
   from 'C:\xampp\htdocs\sanguches\themes\javascript.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66a833c4b0e862_18664146',
+  'unifunc' => 'content_66a83aeb82d472_51355300',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66a833c4b0e862_18664146 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66a83aeb82d472_51355300 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\sanguches\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.count.php','function'=>'smarty_modifier_count',),));
 if ((isset($_smarty_tpl->tpl_vars['js_def']->value)) && is_array($_smarty_tpl->tpl_vars['js_def']->value) && smarty_modifier_count($_smarty_tpl->tpl_vars['js_def']->value)) {
 echo '<script'; ?>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-07-29 19:29:20
+/* Smarty version 4.3.1, created on 2024-07-29 20:00:07
   from 'C:\xampp\htdocs\sanguches\modules\ht_staticblocks\views\templates\hook\ht_staticblocks_displayNav1.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66a833e01f93a9_07595138',
+  'unifunc' => 'content_66a83b17408007_40497124',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66a833e01f93a9_07595138 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '84432255666a833e01ec0d6_37559162';
+function content_66a83b17408007_40497124 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '74355511966a83b17403199_11847102';
 ?>
 
 <!-- Static Block module -->

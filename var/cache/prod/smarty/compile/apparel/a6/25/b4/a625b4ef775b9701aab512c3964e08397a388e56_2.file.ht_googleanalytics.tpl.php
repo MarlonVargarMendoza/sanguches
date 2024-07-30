@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-07-29 19:29:24
+/* Smarty version 4.3.1, created on 2024-07-29 20:00:11
   from 'C:\xampp\htdocs\sanguches\modules\ht_googleanalytics\views\templates\hook\ht_googleanalytics.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66a833e4ae7ec0_19143486',
+  'unifunc' => 'content_66a83b1b54ee36_76596867',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66a833e4ae7ec0_19143486 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66a83b1b54ee36_76596867 (Smarty_Internal_Template $_smarty_tpl) {
 if ((isset($_smarty_tpl->tpl_vars['ga_enable']->value)) && $_smarty_tpl->tpl_vars['ga_enable']->value == 'ga_yes') {?>
     <?php echo '<script'; ?>
 >

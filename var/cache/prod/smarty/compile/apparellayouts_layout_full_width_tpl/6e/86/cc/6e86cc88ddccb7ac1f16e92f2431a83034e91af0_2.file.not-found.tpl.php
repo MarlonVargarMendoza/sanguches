@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-07-29 19:29:25
+/* Smarty version 4.3.1, created on 2024-07-29 20:00:12
   from 'C:\xampp\htdocs\sanguches\themes\apparel\templates\errors\not-found.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66a833e5bb25a7_17117501',
+  'unifunc' => 'content_66a83b1cb76503_73135728',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,19 +20,19 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66a833e5bb25a7_17117501 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66a83b1cb76503_73135728 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
 <section id="content" class="page-content page-not-found">
   <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7794340966a833e5bade78_17729404', 'page_content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_110735447666a83b1cb704a5_05366781', 'page_content');
 ?>
 
 </section>
 <?php }
 /* {block 'search'} */
-class Block_196304224066a833e5bb0659_92330255 extends Smarty_Internal_Block
+class Block_119038736366a83b1cb73c64_56524485 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -44,7 +44,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'search'} */
 /* {block 'hook_not_found'} */
-class Block_151042858766a833e5bb19d5_34198249 extends Smarty_Internal_Block
+class Block_137374814066a83b1cb75393_40538740 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -56,20 +56,20 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_not_found'} */
 /* {block 'page_content'} */
-class Block_7794340966a833e5bade78_17729404 extends Smarty_Internal_Block
+class Block_110735447666a83b1cb704a5_05366781 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content' => 
   array (
-    0 => 'Block_7794340966a833e5bade78_17729404',
+    0 => 'Block_110735447666a83b1cb704a5_05366781',
   ),
   'search' => 
   array (
-    0 => 'Block_196304224066a833e5bb0659_92330255',
+    0 => 'Block_119038736366a83b1cb73c64_56524485',
   ),
   'hook_not_found' => 
   array (
-    0 => 'Block_151042858766a833e5bb19d5_34198249',
+    0 => 'Block_137374814066a83b1cb75393_40538740',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -82,12 +82,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 </p>
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_196304224066a833e5bb0659_92330255', 'search', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_119038736366a83b1cb73c64_56524485', 'search', $this->tplIndex);
 ?>
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_151042858766a833e5bb19d5_34198249', 'hook_not_found', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_137374814066a83b1cb75393_40538740', 'hook_not_found', $this->tplIndex);
 ?>
 
 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-07-29 19:29:23
+/* Smarty version 4.3.1, created on 2024-07-29 20:00:10
   from 'module:ps_linklistviewstemplateshooklinkblock.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66a833e3d307e7_83103381',
+  'unifunc' => 'content_66a83b1a26af57_16202727',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_66a833e3d307e7_83103381 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66a83b1a26af57_16202727 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
 ));
 ?><div class="col-md-6 links">
@@ -29,7 +29,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                         Productos
                     </span>
                 </div>
-                                <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_60789"
+                                <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_28952"
                     data-toggle="collapse">
                     <span>Productos</span>
                     <span class="float-xs-right icon">
@@ -39,7 +39,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                         </span>
                     </span>
                 </div>
-                <ul id="footer_sub_menu_60789" class="collapse footer-column-content footer-links">
+                <ul id="footer_sub_menu_28952" class="collapse footer-column-content footer-links">
                                             <li>
                             <a id="link-product-page-prices-drop-1" class="cms-page-link" href="http://localhost/sanguches/es/productos-rebajados"
                                 title="Nuestros productos especiales" >
@@ -66,7 +66,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                         Nuestra empresa
                     </span>
                 </div>
-                                <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_64551"
+                                <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_5014"
                     data-toggle="collapse">
                     <span>Nuestra empresa</span>
                     <span class="float-xs-right icon">
@@ -76,7 +76,7 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                         </span>
                     </span>
                 </div>
-                <ul id="footer_sub_menu_64551" class="collapse footer-column-content footer-links">
+                <ul id="footer_sub_menu_5014" class="collapse footer-column-content footer-links">
                                             <li>
                             <a id="link-cms-page-1-2" class="cms-page-link" href="http://localhost/sanguches/es/content/1-entrega"
                                 title="Nuestros términos y condiciones de envío" >

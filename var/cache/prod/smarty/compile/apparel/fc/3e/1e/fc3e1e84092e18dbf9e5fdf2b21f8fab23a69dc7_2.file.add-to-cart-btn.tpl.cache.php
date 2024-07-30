@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-07-29 19:29:16
+/* Smarty version 4.3.1, created on 2024-07-29 20:00:03
   from 'C:\xampp\htdocs\sanguches\themes\apparel\templates\catalog\_partials\customize\add-to-cart-btn.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66a833dcb2a504_70916143',
+  'unifunc' => 'content_66a83b13a64cc0_63217820',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66a833dcb2a504_70916143 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '51916685766a833dcb22452_04592488';
+function content_66a83b13a64cc0_63217820 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '56833785366a83b13a5ec74_57069317';
 ?>
 
 <?php if (!$_smarty_tpl->tpl_vars['configuration']->value['is_catalog']) {?>

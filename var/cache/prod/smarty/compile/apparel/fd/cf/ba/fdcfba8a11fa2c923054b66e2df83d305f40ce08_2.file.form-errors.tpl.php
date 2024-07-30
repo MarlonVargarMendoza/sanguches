@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-07-29 19:30:32
+/* Smarty version 4.3.1, created on 2024-07-29 20:14:55
   from 'C:\xampp\htdocs\sanguches\themes\apparel\templates\_partials\form-errors.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66a834282a0c57_52789767',
+  'unifunc' => 'content_66a83e8f0b4b38_66255487',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,26 +20,26 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66a834282a0c57_52789767 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66a83e8f0b4b38_66255487 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\sanguches\\vendor\\smarty\\smarty\\libs\\plugins\\modifier.count.php','function'=>'smarty_modifier_count',),));
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 if (smarty_modifier_count($_smarty_tpl->tpl_vars['errors']->value)) {?>
   <div class="help-block">
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_154909710366a8342829fcf3_13328113', 'form_errors');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_181727418766a83e8f0b1699_91380521', 'form_errors');
 ?>
 
   </div>
 <?php }
 }
 /* {block 'form_errors'} */
-class Block_154909710366a8342829fcf3_13328113 extends Smarty_Internal_Block
+class Block_181727418766a83e8f0b1699_91380521 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'form_errors' => 
   array (
-    0 => 'Block_154909710366a8342829fcf3_13328113',
+    0 => 'Block_181727418766a83e8f0b1699_91380521',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

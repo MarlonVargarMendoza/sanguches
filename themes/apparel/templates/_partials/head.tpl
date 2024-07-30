@@ -64,3 +64,5 @@
 {/block}
 
 {block name='hook_extra'}{/block}
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+

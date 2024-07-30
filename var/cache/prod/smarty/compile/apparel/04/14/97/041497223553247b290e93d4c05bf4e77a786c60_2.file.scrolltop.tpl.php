@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.3.1, created on 2024-07-29 19:29:24
+/* Smarty version 4.3.1, created on 2024-07-29 20:00:10
   from 'C:\xampp\htdocs\sanguches\modules\ht_scrolltop\views\templates\hook\scrolltop.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
-  'unifunc' => 'content_66a833e44d8d19_99802331',
+  'unifunc' => 'content_66a83b1ac3f3b0_82804594',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_66a833e44d8d19_99802331 (Smarty_Internal_Template $_smarty_tpl) {
+function content_66a83b1ac3f3b0_82804594 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <a class="scrollTop" href="#" title="Scroll To Top">
     <span>
