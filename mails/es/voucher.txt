@@ -2,6 +2,17 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola {firstname} {lastname},
+
+ID Pedido {order_name} - Código Cupón de descuento generado
+
+Nos complace informarle que hemos generado un cupón de descuento a su nombre tras haber realizado el pedido con la referencia {order_name}.
+
+CÓDIGO CUPÓN DE DESCUENTO: {voucher_num} por valor de {voucher_amount}
+
+Para utilizarlo, simplemente copie/pegue este código durante el proceso de pago.
+=======
 Hi {firstname} {lastname},
 
 Order ID {order_name} - Voucher code generated
@@ -11,6 +22,7 @@ We are pleased to inform you that a voucher has been generated in your name for 
 VOUCHER CODE: {voucher_num} in the amount of {voucher_amount}
 
 In order to use it, just copy/paste this code during check out.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

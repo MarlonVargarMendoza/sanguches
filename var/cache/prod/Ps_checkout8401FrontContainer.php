@@ -178,7 +178,11 @@ class Ps_checkout8401FrontContainer extends Container
      */
     protected function getCacheDirectoryProviderService()
     {
+<<<<<<< HEAD
+        return $this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\sanguches', false);
+=======
         return $this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio', false);
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -520,7 +524,11 @@ class Ps_checkout8401FrontContainer extends Container
      */
     protected function getLoggerDirectoryService()
     {
+<<<<<<< HEAD
+        return $this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\sanguches');
+=======
         return $this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio');
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -550,7 +558,11 @@ class Ps_checkout8401FrontContainer extends Container
      */
     protected function getLoggerHandlerFactoryService()
     {
+<<<<<<< HEAD
+        return $this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerHandlerFactory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerHandlerFactory(($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] ?? ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\sanguches')))->getPath(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerFilename'] ?? $this->getLoggerFilenameService())->get(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerConfiguration'] ?? $this->getLoggerConfigurationService())->getMaxFiles(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerConfiguration'] ?? $this->getLoggerConfigurationService())->getLevel());
+=======
         return $this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerHandlerFactory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerHandlerFactory(($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] ?? ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio')))->getPath(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerFilename'] ?? $this->getLoggerFilenameService())->get(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerConfiguration'] ?? $this->getLoggerConfigurationService())->getMaxFiles(), ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerConfiguration'] ?? $this->getLoggerConfigurationService())->getLevel());
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -1250,7 +1262,11 @@ class Ps_checkout8401FrontContainer extends Container
      */
     protected function getPsCheckout_Cache_Paypal_CaptureService()
     {
+<<<<<<< HEAD
+        return $this->services['ps_checkout.cache.paypal.capture'] = new \Symfony\Component\Cache\Simple\ChainCache([0 => new \Symfony\Component\Cache\Simple\ArrayCache(), 1 => new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-capture', 3600, ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] ?? ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\sanguches', false)))->getPath())]);
+=======
         return $this->services['ps_checkout.cache.paypal.capture'] = new \Symfony\Component\Cache\Simple\ChainCache([0 => new \Symfony\Component\Cache\Simple\ArrayCache(), 1 => new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-capture', 3600, ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] ?? ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio', false)))->getPath())]);
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -1260,7 +1276,11 @@ class Ps_checkout8401FrontContainer extends Container
      */
     protected function getPsCheckout_Cache_Paypal_OrderService()
     {
+<<<<<<< HEAD
+        return $this->services['ps_checkout.cache.paypal.order'] = new \Symfony\Component\Cache\Simple\ChainCache([0 => new \Symfony\Component\Cache\Simple\ArrayCache(), 1 => new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-orders', 3600, ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] ?? ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\sanguches', false)))->getPath())]);
+=======
         return $this->services['ps_checkout.cache.paypal.order'] = new \Symfony\Component\Cache\Simple\ChainCache([0 => new \Symfony\Component\Cache\Simple\ArrayCache(), 1 => new \Symfony\Component\Cache\Simple\FilesystemCache('paypal-orders', 3600, ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] ?? ($this->services['PrestaShop\\ModuleLibCacheDirectoryProvider\\Cache\\CacheDirectoryProvider'] = new \PrestaShop\ModuleLibCacheDirectoryProvider\Cache\CacheDirectoryProvider('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio', false)))->getPath())]);
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**
@@ -1300,7 +1320,11 @@ class Ps_checkout8401FrontContainer extends Container
      */
     protected function getPsCheckout_LoggerService()
     {
+<<<<<<< HEAD
+        return $this->services['ps_checkout.logger'] = ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerFactory'] ?? $this->getLoggerFactoryService())->build(($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] ?? ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\sanguches'))));
+=======
         return $this->services['ps_checkout.logger'] = ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerFactory'] ?? $this->getLoggerFactoryService())->build(($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] ?? ($this->services['PrestaShop\\Module\\PrestashopCheckout\\Logger\\LoggerDirectory'] = new \PrestaShop\Module\PrestashopCheckout\Logger\LoggerDirectory('8.1.2', 'C:\\xampp\\htdocs\\prestashop_intermedio'))));
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     /**

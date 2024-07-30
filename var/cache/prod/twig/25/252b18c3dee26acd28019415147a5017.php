@@ -62,7 +62,11 @@ class __TwigTemplate_9255c0f2c3399eb677216723e8996d6d extends Template
         foreach ($context['_seq'] as $context["_key"] => $context["theme"]) {
             // line 31
             echo "            ";
+<<<<<<< HEAD
+            $this->loadTemplate("@Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig", "@Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig", 31, "1704123182")->display(twig_array_merge($context, $context["theme"]));
+=======
             $this->loadTemplate("@Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig", "@Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig", 31, "1984108203")->display(twig_array_merge($context, $context["theme"]));
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
             // line 75
             echo "        ";
             ++$context['loop']['index0'];
@@ -100,13 +104,21 @@ class __TwigTemplate_9255c0f2c3399eb677216723e8996d6d extends Template
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
+        return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig", "C:\\xampp\\htdocs\\sanguches\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\ThemeLibrary\\theme_library_content.html.twig");
+=======
         return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\ThemeLibrary\\theme_library_content.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }
 
 
 /* @Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig */
+<<<<<<< HEAD
+class __TwigTemplate_9255c0f2c3399eb677216723e8996d6d___1704123182 extends Template
+=======
 class __TwigTemplate_9255c0f2c3399eb677216723e8996d6d___1984108203 extends Template
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 {
     private $source;
     private $macros = [];
@@ -254,6 +266,10 @@ class __TwigTemplate_9255c0f2c3399eb677216723e8996d6d___1984108203 extends Templ
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
+        return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig", "C:\\xampp\\htdocs\\sanguches\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\ThemeLibrary\\theme_library_content.html.twig");
+=======
         return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/ThemeLibrary/theme_library_content.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\ThemeLibrary\\theme_library_content.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }

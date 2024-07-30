@@ -2,6 +2,41 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+¡Enhorabuena!
+
+Un nuevo pedido ha sido efectuado en {shop_name} por el siguiente cliente: {firstname} {lastname} ({email})
+
+Detalles del pedido
+
+Pedido: {order_name} Realizado el {date}
+
+Pago: {payment}
+
+Referencia	Producto	Precio unitario	Cantidad	Precio total   {items}
+Productos	{total_products}
+Descuentos	{total_discounts}
+Embalaje de regalo	{total_wrapping}
+Transporte	{total_shipping}
+Incluyendo impuestos totales	{total_tax_paid}
+Total pagado	{total_paid}
+
+Transportista
+
+Transportista: {carrier}
+
+Pago: {payment}
+
+Dirección de entrega
+
+{delivery_block_html}
+
+Dirección de facturación
+
+{invoice_block_html}
+
+Mensaje del cliente:
+=======
 Congratulations!
 
 A new order was placed on {shop_name} by the following customer: {firstname} {lastname} ({email})
@@ -35,6 +70,7 @@ Billing address
 {invoice_block_html}
 
 Customer message:
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 {message}
 

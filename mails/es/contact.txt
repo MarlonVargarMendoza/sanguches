@@ -2,6 +2,17 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Mensaje de un cliente de {shop_name}
+
+Dirección de correo electrónico del cliente: {email}
+
+ID del Pedido #:  {order_name}
+
+Archivo adjunto: {attached_file}
+
+Mensaje del cliente:
+=======
 Message from a {shop_name} customer
 
 Customer Email Address: {email}
@@ -11,6 +22,7 @@ Order ID #:  {order_name}
 Attached file: {attached_file}
 
 Customer message:
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 {message}
 

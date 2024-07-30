@@ -2,6 +2,16 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola {firstname} {lastname},
+
+Programa de Patrocinio
+
+Hemos creado un cupón de descuento a su nombre por referir a un amigo.
+Aquí está el código de su cupón de descuento: {voucher_num}, por valor de {voucher_num}
+
+Copie y pegue este código durante el proceso de pago de su próximo pedido.
+=======
 Hi {firstname} {lastname},
 
 Sponsorship Program
@@ -10,6 +20,7 @@ We have created a voucher in your name for referring a friend.
 Here is the code of your voucher: {voucher_num}, with an amount of {voucher_num}
 
 Simply copy/paste this code during the payment process for your next order.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

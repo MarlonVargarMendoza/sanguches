@@ -1,11 +1,19 @@
 <?php
+<<<<<<< HEAD
+/* Smarty version 4.3.1, created on 2024-07-29 20:14:11
+=======
 /* Smarty version 4.3.1, created on 2024-07-29 18:42:33
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
   from 'module:productcommentsviewstemplateshookalertmodal.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.1',
+<<<<<<< HEAD
+  'unifunc' => 'content_66a83e63477a20_22584783',
+=======
   'unifunc' => 'content_66a828e9b42b65_23892268',
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +28,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
+function content_66a83e63477a20_22584783 (Smarty_Internal_Template $_smarty_tpl) {
+=======
 function content_66a828e9b42b65_23892268 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 $_smarty_tpl->_assignInScope('icon', (($tmp = $_smarty_tpl->tpl_vars['icon']->value ?? null)===null||$tmp==='' ? 'check_circle' ?? null : $tmp));
 $_smarty_tpl->_assignInScope('modal_message', (($tmp = $_smarty_tpl->tpl_vars['modal_message']->value ?? null)===null||$tmp==='' ? '' ?? null : $tmp));?>
 

@@ -2,6 +2,15 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola {firstname} {lastname},
+
+Se ha generado el código del cupón
+
+Aquí está su nuevo código de cupón: {voucher_num}
+
+Para utilizarlo, simplemente copie/pegue este código durante el proceso de pago.
+=======
 Hi {firstname} {lastname},
 
 Voucher code has been generated
@@ -9,6 +18,7 @@ Voucher code has been generated
 Here is your new voucher code: {voucher_num}
 
 In order to use it, just copy/paste this code during check out.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

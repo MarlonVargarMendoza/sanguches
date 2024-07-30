@@ -37,7 +37,11 @@ class __TwigTemplate_2238f06b1fe0c0b2d1cea66670692160 extends Template
         echo "
 ";
         // line 26
+<<<<<<< HEAD
+        $this->loadTemplate("@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig", 26, "1479439011")->display(twig_array_merge($context, ["id" => "import_theme_from_ftp_modal", "closable" => true]));
+=======
         $this->loadTemplate("@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig", 26, "373330238")->display(twig_array_merge($context, ["id" => "import_theme_from_ftp_modal", "closable" => true]));
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     public function getTemplateName()
@@ -57,13 +61,21 @@ class __TwigTemplate_2238f06b1fe0c0b2d1cea66670692160 extends Template
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
+        return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig", "C:\\xampp\\htdocs\\sanguches\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\Modals\\import_theme_from_ftp_modal.html.twig");
+=======
         return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\Modals\\import_theme_from_ftp_modal.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }
 
 
 /* @Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig */
+<<<<<<< HEAD
+class __TwigTemplate_2238f06b1fe0c0b2d1cea66670692160___1479439011 extends Template
+=======
 class __TwigTemplate_2238f06b1fe0c0b2d1cea66670692160___373330238 extends Template
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 {
     private $source;
     private $macros = [];
@@ -199,6 +211,10 @@ class __TwigTemplate_2238f06b1fe0c0b2d1cea66670692160___373330238 extends Templa
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
+        return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig", "C:\\xampp\\htdocs\\sanguches\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\Modals\\import_theme_from_ftp_modal.html.twig");
+=======
         return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/import_theme_from_ftp_modal.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\Modals\\import_theme_from_ftp_modal.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }

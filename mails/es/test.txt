@@ -2,11 +2,19 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola {firstname} {lastname},
+
+Esta es una prueba de email de su tienda.
+
+Si puede leer esto, significa que ¡la prueba fue completada correctamente!
+=======
 Hi {firstname} {lastname},
 
 Here is a test email from your shop.
 
 If you can read this, it means the test is successful!
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 
