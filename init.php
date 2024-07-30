@@ -29,4 +29,5 @@ if (isset(Context::getContext()->controller)) {
 } else {
     $controller = new FrontController();
     $controller->init();// Initialize the controller
+    //buenas
 }
