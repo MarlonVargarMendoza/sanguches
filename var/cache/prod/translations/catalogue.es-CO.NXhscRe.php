@@ -3,6 +3,8 @@
 use Symfony\Component\Translation\MessageCatalogue;
 
 $catalogue = new MessageCatalogue('es-CO', array (
+<<<<<<< HEAD
+=======
   'AdminActions' => 
   array (
     'Uninstall' => 'Desinstalar',
@@ -8967,6 +8969,7 @@ De acuerdo con la Rec.30;Art.7(1)(c)',
     '403 Forbidden' => '403 Prohibido',
     'You cannot access this store from your country. We apologize for the inconvenience.' => 'No puede acceder a esta tienda desde su país. Pedimos disculpas por las molestias.',
   ),
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 ));
 
 $catalogueEs = new MessageCatalogue('es', array (

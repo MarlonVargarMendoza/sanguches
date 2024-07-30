@@ -37,7 +37,11 @@ class __TwigTemplate_772bda7137435554dac852aa11a374e4 extends Template
         echo "
 ";
         // line 26
+<<<<<<< HEAD
+        $this->loadTemplate("@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig", 26, "314658065")->display(twig_array_merge($context, ["id" => "use_theme_modal", "closable" => true]));
+=======
         $this->loadTemplate("@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig", 26, "1422067113")->display(twig_array_merge($context, ["id" => "use_theme_modal", "closable" => true]));
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     public function getTemplateName()
@@ -57,13 +61,21 @@ class __TwigTemplate_772bda7137435554dac852aa11a374e4 extends Template
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
+        return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig", "C:\\xampp\\htdocs\\sanguches\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\Modals\\use_theme_modal.html.twig");
+=======
         return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\Modals\\use_theme_modal.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }
 
 
 /* @Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig */
+<<<<<<< HEAD
+class __TwigTemplate_772bda7137435554dac852aa11a374e4___314658065 extends Template
+=======
 class __TwigTemplate_772bda7137435554dac852aa11a374e4___1422067113 extends Template
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 {
     private $source;
     private $macros = [];
@@ -190,6 +202,10 @@ class __TwigTemplate_772bda7137435554dac852aa11a374e4___1422067113 extends Templ
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
+        return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig", "C:\\xampp\\htdocs\\sanguches\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\Modals\\use_theme_modal.html.twig");
+=======
         return new Source("", "@Modules/psxdesign/views/templates/admin/themes/Blocks/Modals/use_theme_modal.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\modules\\psxdesign\\views\\templates\\admin\\themes\\Blocks\\Modals\\use_theme_modal.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }

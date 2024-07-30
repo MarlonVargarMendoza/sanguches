@@ -69,6 +69,10 @@ class __TwigTemplate_5a468641cdddeedb26c713cb7891bae5 extends Template
 
     public function getSourceContext()
     {
+<<<<<<< HEAD
+        return new Source("", "@PrestaShop/Admin/Common/Grid/Columns/Content/data.html.twig", "C:\\xampp\\htdocs\\sanguches\\src\\PrestaShopBundle\\Resources\\views\\Admin\\Common\\Grid\\Columns\\Content\\data.html.twig");
+=======
         return new Source("", "@PrestaShop/Admin/Common/Grid/Columns/Content/data.html.twig", "C:\\xampp\\htdocs\\prestashop_intermedio\\src\\PrestaShopBundle\\Resources\\views\\Admin\\Common\\Grid\\Columns\\Content\\data.html.twig");
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 }

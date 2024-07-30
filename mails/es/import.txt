@@ -2,11 +2,19 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola {firstname} {lastname},
+
+Importación finalizada
+
+El archivo {filename} ha sido importado satisfactoriamente a su tienda.
+=======
 Hi {firstname} {lastname},
 
 Import finished
 
 The file {filename} has been successfully imported to your store.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

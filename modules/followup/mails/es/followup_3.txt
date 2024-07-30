@@ -2,6 +2,17 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola {firstname} {lastname},
+
+Gracias por su confianza y fidelidad.
+
+Nos complace ofrecerle un descuento de un {amount}% en su próximo pedido. Esta oferta es solamente válida durante {days} días, ¡así que no espere más!
+
+Aquí está su CÓDIGO DE CUPÓN DE DESCUENTO: {voucher_num}
+
+Introduzca este código en su carrito de compra para obtener el descuento.
+=======
 Hi {firstname} {lastname},
 
 Thanks for your trust.
@@ -11,6 +22,7 @@ We are pleased to offer you a discount of {amount}% off your next order. And thi
 Here is your VOUCHER CODE: {voucher_num}
 
 Enter this code in your shopping cart to get the discount.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

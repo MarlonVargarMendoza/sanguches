@@ -1,6 +1,10 @@
 <?php
 /*
+<<<<<<< HEAD
+* 2007-2018 PrestaShop
+=======
 * 2007-2016 PrestaShop
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 *
 * NOTICE OF LICENSE
 *
@@ -19,15 +23,27 @@
 * needs please refer to http://www.prestashop.com for more information.
 *
 *  @author PrestaShop SA <contact@prestashop.com>
+<<<<<<< HEAD
+*  @copyright  2007-2018 PrestaShop SA
+=======
 *  @copyright  2007-2016 PrestaShop SA
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
+<<<<<<< HEAD
+use PrestaShop\PrestaShop\Core\Module\WidgetInterface;
+use PrestaShop\PrestaShop\Adapter\Image\ImageRetriever;
+use PrestaShop\PrestaShop\Adapter\Product\PriceFormatter;
+use PrestaShop\PrestaShop\Core\Product\ProductListingPresenter;
+use PrestaShop\PrestaShop\Adapter\Product\ProductColorsRetriever;
+=======
 use PrestaShop\PrestaShop\Adapter\Image\ImageRetriever;
 use PrestaShop\PrestaShop\Adapter\Product\PriceFormatter;
 use PrestaShop\PrestaShop\Adapter\Product\ProductColorsRetriever;
 use PrestaShop\PrestaShop\Core\Module\WidgetInterface;
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 if (!defined('_PS_VERSION_')) {
     exit;
@@ -40,6 +56,16 @@ class Ps_NewProducts extends Module implements WidgetInterface
     public function __construct()
     {
         $this->name = 'ps_newproducts';
+<<<<<<< HEAD
+        $this->author = 'PrestaShop';
+        $this->version = '1.0.1';
+        $this->need_instance = 0;
+
+        $this->ps_versions_compliancy = array(
+            'min' => '1.7.0.0',
+            'max' => _PS_VERSION_,
+        );
+=======
         $this->tab = 'front_office_features';
         $this->author = 'PrestaShop';
         $this->version = '1.0.4';
@@ -49,12 +75,18 @@ class Ps_NewProducts extends Module implements WidgetInterface
             'min' => '1.7.0.0',
             'max' => _PS_VERSION_,
         ];
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
         $this->bootstrap = true;
         parent::__construct();
 
+<<<<<<< HEAD
+        $this->displayName = $this->trans('New products block', array(), 'Modules.Newproducts.Admin');
+        $this->description = $this->trans('Displays a block featuring your store\'s newest products.', array(), 'Modules.Newproducts.Admin');
+=======
         $this->displayName = $this->trans('New products block', [], 'Modules.Newproducts.Admin');
         $this->description = $this->trans('Highlight your store\'s newest products, display a block on the homepage and let the visitors know about your latest news.', [], 'Modules.Newproducts.Admin');
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
         $this->templateFile = 'module:ps_newproducts/views/templates/hook/ps_newproducts.tpl';
     }
@@ -108,6 +140,29 @@ class Ps_NewProducts extends Module implements WidgetInterface
     {
         $output = '';
         if (Tools::isSubmit('submitBlockNewProducts')) {
+<<<<<<< HEAD
+
+            $productNbr = Tools::getValue('NEW_PRODUCTS_NBR');
+
+            if (!$productNbr || empty($productNbr)) {
+                $output .= $this->displayError(
+                    $this->trans('Please complete the "products to display" field.', array(), 'Modules.Newproducts.Admin' )
+                );
+            } elseif (0 === (int)$productNbr) {
+                $output .= $this->displayError(
+                    $this->trans('Invalid number.', array(), 'Modules.Newproducts.Admin' )
+                );
+            } else {
+                Configuration::updateValue('PS_NB_DAYS_NEW_PRODUCT', (int)Tools::getValue('PS_NB_DAYS_NEW_PRODUCT'));
+                Configuration::updateValue('NEW_PRODUCTS_NBR', (int)$productNbr);
+
+                $this->_clearCache('*');
+
+                $output .= $this->displayConfirmation($this->trans('The settings have been updated.', array(), 'Admin.Notifications.Success'));
+            }
+        }
+        return $output.$this->renderForm();
+=======
             $productNbr = Tools::getValue('NEW_PRODUCTS_NBR');
             $productNbDays = Tools::getValue('PS_NB_DAYS_NEW_PRODUCT');
 
@@ -130,10 +185,45 @@ class Ps_NewProducts extends Module implements WidgetInterface
         }
 
         return $output . $this->renderForm();
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     public function renderForm()
     {
+<<<<<<< HEAD
+        $fields_form = array(
+            'form' => array(
+                'legend' => array(
+                    'title' => $this->trans('Settings', array(), 'Admin.Global'),
+                    'icon' => 'icon-cogs'
+                ),
+                'input' => array(
+                    array(
+                        'type' => 'text',
+                        'label' => $this->trans('Products to display', array(), 'Modules.Newproducts.Admin'),
+                        'name' => 'NEW_PRODUCTS_NBR',
+                        'class' => 'fixed-width-xs',
+                        'desc' => $this->trans('Define the number of products to be displayed in this block.', array(), 'Modules.Newproducts.Admin'),
+                    ),
+                    array(
+                        'type'  => 'text',
+                        'label' => $this->trans('Number of days for which the product is considered \'new\'', array(), 'Modules.Newproducts.Admin'),
+                        'name'  => 'PS_NB_DAYS_NEW_PRODUCT',
+                        'class' => 'fixed-width-xs',
+                    ),
+                ),
+                'submit' => array(
+                    'title' => $this->trans('Save', array(), 'Admin.Actions')
+                ),
+            ),
+        );
+
+        $lang = new Language((int)Configuration::get('PS_LANG_DEFAULT'));
+
+        $helper = new HelperForm();
+        $helper->show_toolbar = false;
+        $helper->table =  $this->table;
+=======
         $fields_form = [
             'form' => [
                 'legend' => [
@@ -166,6 +256,7 @@ class Ps_NewProducts extends Module implements WidgetInterface
         $helper = new HelperForm();
         $helper->show_toolbar = false;
         $helper->table = $this->table;
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
         $helper->default_form_language = $lang->id;
         $helper->allow_employee_form_lang = Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG') ? Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG') : 0;
         $helper->identifier = $this->identifier;
@@ -173,6 +264,17 @@ class Ps_NewProducts extends Module implements WidgetInterface
         $helper->currentIndex = $this->context->link->getAdminLink('AdminModules', false) .
             '&configure=' . $this->name .
             '&tab_module=' . $this->tab .
+<<<<<<< HEAD
+            '&module_name='.$this->name;
+        $helper->token = Tools::getAdminTokenLite('AdminModules');
+        $helper->tpl_vars = array(
+            'fields_value' => $this->getConfigFieldsValues(),
+            'languages' => $this->context->controller->getLanguages(),
+            'id_language' => $this->context->language->id
+        );
+
+        return $helper->generateForm(array($fields_form));
+=======
             '&module_name=' . $this->name;
         $helper->token = Tools::getAdminTokenLite('AdminModules');
         $helper->tpl_vars = [
@@ -182,14 +284,22 @@ class Ps_NewProducts extends Module implements WidgetInterface
         ];
 
         return $helper->generateForm([$fields_form]);
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     public function getConfigFieldsValues()
     {
+<<<<<<< HEAD
+        return array(
+            'PS_NB_DAYS_NEW_PRODUCT' => Tools::getValue('PS_NB_DAYS_NEW_PRODUCT', Configuration::get('PS_NB_DAYS_NEW_PRODUCT')),
+            'NEW_PRODUCTS_NBR' => Tools::getValue('NEW_PRODUCTS_NBR', Configuration::get('NEW_PRODUCTS_NBR')),
+        );
+=======
         return [
             'PS_NB_DAYS_NEW_PRODUCT' => Tools::getValue('PS_NB_DAYS_NEW_PRODUCT', Configuration::get('PS_NB_DAYS_NEW_PRODUCT')),
             'NEW_PRODUCTS_NBR' => Tools::getValue('NEW_PRODUCTS_NBR', Configuration::get('NEW_PRODUCTS_NBR')),
         ];
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
     }
 
     public function renderWidget($hookName, array $configuration)
@@ -212,24 +322,45 @@ class Ps_NewProducts extends Module implements WidgetInterface
         $products = $this->getNewProducts();
 
         if (!empty($products)) {
+<<<<<<< HEAD
+            return array(
+                'products' => $products,
+                'allNewProductsLink' => Context::getContext()->link->getPageLink('new-products'),
+            );
+        }
+=======
             return [
                 'products' => $products,
                 'allNewProductsLink' => Context::getContext()->link->getPageLink('new-products'),
             ];
         }
 
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
         return false;
     }
 
     protected function getNewProducts()
     {
+<<<<<<< HEAD
+        if (Configuration::get('PS_CATALOG_MODE')) {
+            return false;
+        }
+
+=======
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
         $newProducts = false;
 
         if (Configuration::get('PS_NB_DAYS_NEW_PRODUCT')) {
             $newProducts = Product::getNewProducts(
+<<<<<<< HEAD
+                (int)$this->context->language->id,
+                0,
+                (int)Configuration::get('NEW_PRODUCTS_NBR')
+=======
                 (int) $this->context->language->id,
                 0,
                 (int) Configuration::get('NEW_PRODUCTS_NBR')
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
             );
         }
 
@@ -237,6 +368,19 @@ class Ps_NewProducts extends Module implements WidgetInterface
 
         $presenterFactory = new ProductPresenterFactory($this->context);
         $presentationSettings = $presenterFactory->getPresentationSettings();
+<<<<<<< HEAD
+        $presenter = new ProductListingPresenter(
+            new ImageRetriever(
+                $this->context->link
+            ),
+            $this->context->link,
+            new PriceFormatter(),
+            new ProductColorsRetriever(),
+            $this->context->getTranslator()
+        );
+
+        $products_for_template = array();
+=======
         if (version_compare(_PS_VERSION_, '1.7.5', '>=')) {
             $presenter = new \PrestaShop\PrestaShop\Adapter\Presenter\Product\ProductListingPresenter(
                 new ImageRetriever(
@@ -260,6 +404,7 @@ class Ps_NewProducts extends Module implements WidgetInterface
         }
 
         $products_for_template = [];
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
         if (is_array($newProducts)) {
             foreach ($newProducts as $rawProduct) {

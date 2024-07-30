@@ -2,6 +2,19 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+{firstname_friend} {lastname_friend}, ¡Únase!
+
+¡Su amigo {firstname} {lastname} quiere referirle en [{shop_name}]({shop_url})!
+
+Nos complace ofrecerle un cupón de descuento valorado en {discount} para que lo utilice en su próximo pedido. ¡Afíliese y obtega un cupón de descuento de {discount}!
+
+[Es muy fácil registrarse. ¡Solo haga clic aquí!]({link})
+
+Al registrarse, no olvide proporcionar la dirección de correo electrónico de su amigo referente: {email}.
+
+Saludos.
+=======
 {firstname_friend} {lastname_friend}, Join us!
 
 Your friend {firstname} {lastname} wants to refer you on [{shop_name}]({shop_url})!
@@ -13,6 +26,7 @@ We are pleased to offer you a voucher worth {discount} that you can use on your 
 When signing up, don't forget to provide the email address of your referring friend: {email}.
 
 Best regards,
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

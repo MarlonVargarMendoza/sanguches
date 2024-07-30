@@ -10,12 +10,36 @@ SetEnv HTTP_MOD_REWRITE On
 RewriteEngine on
 
 
+<<<<<<< HEAD
+#Domain: localhost
+RewriteRule . - [E=REWRITEBASE:/sanguches/]
+=======
 #Domain: 127.0.0.1
 RewriteRule . - [E=REWRITEBASE:/prestashop_intermedio/]
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 RewriteRule ^api(?:/(.*))?$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
 RewriteRule ^upload/.+$ %{ENV:REWRITEBASE}index.php [QSA,L]
 
 # Images
+<<<<<<< HEAD
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^(([\d])(?:\-[\w-]*)?)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/p/$2/$1$3 [L]
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^(([\d])([\d])(?:\-[\w-]*)?)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/p/$2/$3/$1$4 [L]
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^(([\d])([\d])([\d])(?:\-[\w-]*)?)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/p/$2/$3/$4/$1$5 [L]
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^(([\d])([\d])([\d])([\d])(?:\-[\w-]*)?)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/p/$2/$3/$4/$5/$1$6 [L]
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^(([\d])([\d])([\d])([\d])([\d])(?:\-[\w-]*)?)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/p/$2/$3/$4/$5/$6/$1$7 [L]
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^(([\d])([\d])([\d])([\d])([\d])([\d])(?:\-[\w-]*)?)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/p/$2/$3/$4/$5/$6/$7/$1$8 [L]
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^(([\d])([\d])([\d])([\d])([\d])([\d])([\d])(?:\-[\w-]*)?)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/p/$2/$3/$4/$5/$6/$7/$8/$1$9 [L]
+RewriteCond %{HTTP_HOST} ^localhost$
+RewriteRule ^c/([\d]+)(\-[\.*\w-]*)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/c/$1$2$3 [L]
+RewriteCond %{HTTP_HOST} ^localhost$
+=======
 RewriteCond %{HTTP_HOST} ^127.0.0.1$
 RewriteRule ^(([\d])(?:\-[\w-]*)?)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/p/$2/$1$3 [L]
 RewriteCond %{HTTP_HOST} ^127.0.0.1$
@@ -33,6 +57,7 @@ RewriteRule ^(([\d])([\d])([\d])([\d])([\d])([\d])([\d])(?:\-[\w-]*)?)/.+(\.(?:j
 RewriteCond %{HTTP_HOST} ^127.0.0.1$
 RewriteRule ^c/([\d]+)(\-[\.*\w-]*)/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/c/$1$2$3 [L]
 RewriteCond %{HTTP_HOST} ^127.0.0.1$
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 RewriteRule ^c/([a-zA-Z_-]+)(-[\d]+)?/.+(\.(?:jpe?g|webp|png|avif))$ %{ENV:REWRITEBASE}img/c/$1$2$3 [L]
 # AlphaImageLoader for IE and fancybox
 RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ %{ENV:REWRITEBASE}js/jquery/plugins/fancybox/images/$1.$2 [L]
@@ -69,6 +94,10 @@ AddType font/woff2 .woff2
     </IfModule>
 </Files>
 #If rewrite mod isn't enabled
+<<<<<<< HEAD
+ErrorDocument 404 /sanguches/index.php?controller=404
+=======
 ErrorDocument 404 /prestashop_intermedio/index.php?controller=404
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 # ~~end~~ Do not remove this comment, Prestashop will keep automatically the code outside this comment when .htaccess will be generated again

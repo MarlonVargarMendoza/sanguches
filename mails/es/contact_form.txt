@@ -2,6 +2,19 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola {firstname} {lastname},
+
+Su mensaje ha sido enviado correctamente, ¡gracias por tomarse el tiempo en escribirnos!
+
+ID del Pedido #:  {order_name}
+
+Producto:  {product_name}
+
+Archivo adjunto: {attached_file}
+
+Nos pondremos en contacto con usted con la máxima brevedad posible.
+=======
 Hi {firstname} {lastname},
 
 Your message has been sent successfully, thank you for taking the time to write!
@@ -13,6 +26,7 @@ Product:  {product_name}
 Attached file: {attached_file}
 
 We will reply as soon as possible.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

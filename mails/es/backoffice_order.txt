@@ -2,11 +2,19 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola {firstname} {lastname},
+
+Se ha generado un nuevo pedido a su nombre.
+
+Por favor, diríjase a {order_link} para completar el pago.
+=======
 Hi {firstname} {lastname},
 
 A new order has been generated on your behalf.
 
 Please go on {order_link} to complete the payment.
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 

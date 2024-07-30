@@ -2,11 +2,19 @@
 
 {shop_url}
 
+<<<<<<< HEAD
+Hola,
+
+La cobertura de stock es ahora menor que el mínimo especificado de: {warning_coverage}
+
+Cobertura de stock actual: {current_coverage}
+=======
 Hi,
 
 Your stock cover is now less than the specified minimum of: {warning_coverage}
 
 Current stock cover: {current_coverage}
+>>>>>>> 1030b1a5cf19101fc673f98e6c6ac1410d6cea73
 
 [{shop_name}]({shop_url})
 
